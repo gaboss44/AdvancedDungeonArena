@@ -29,6 +29,16 @@
         </repository>
 
         <repository>
+            <id>enginehub-repo</id>
+            <url>https://maven.enginehub.org/repo/</url>
+        </repository>
+
+        <repository>
+            <id>sk89q-repo</id>
+            <url>https://maven.sk89q.com/repo/</url>
+        </repository>
+
+        <repository>
             <id>lumine-repo</id>
             <url>https://mvn.lumine.io/repository/maven-public/</url>
         </repository>
@@ -66,6 +76,11 @@
         <repository>
             <id>auroramc-releases</id>
             <url>https://repo.auroramc.gg/releases</url>
+        </repository>
+
+        <repository>
+            <id>neetgames</id>
+            <url>https://nexus.neetgames.com/repository/maven-releases/</url>
         </repository>
     </repositories>
 
@@ -169,9 +184,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.gmail.nossr50</groupId>
+            <groupId>com.gmail.nossr50.mcMMO</groupId>
             <artifactId>mcMMO</artifactId>
-            <version>2.1.222</version>
+            <version>2.2.044-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
@@ -193,22 +208,26 @@
         <dependency>
             <groupId>it.dado997.BossMania</groupId>
             <artifactId>BossMania</artifactId>
-            <version>1.9.10</version>
-            <scope>provided</scope>
+            <version>1.9.26</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/BossMania-1.9.26.jar</systemPath>
         </dependency>
+
 
         <dependency>
             <groupId>net.advancedplugins.pets</groupId>
             <artifactId>AdvancedPets</artifactId>
-            <version>2.5.4</version>
-            <scope>provided</scope>
+            <version>2.22.11</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/AdvancedPets-2.22.11.jar</systemPath>
         </dependency>
 
         <dependency>
             <groupId>fr.nocsy.mcpets</groupId>
             <artifactId>MCPets</artifactId>
-            <version>4.0.3</version>
-            <scope>provided</scope>
+            <version>4.1.6</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/MCPets-4.1.6.jar</systemPath>
         </dependency>
 
         <dependency>
